@@ -3,7 +3,8 @@ body {
     max-width: 1440px;
     min-width: 375px;
     margin: 0 auto;
-    background: url(../images/criss-cross.png);
+    background-color: rgba(235, 233, 233, .1);
+    height: 3000px;
 }
 /* banner */
 .banner {
@@ -141,65 +142,6 @@ body {
 .nav ul li a:hover span {
     width: 100%;
 }
-/* massage */
-.massage {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    bottom: 10px;
-    right: 20px;
-    width: 70px;
-    height: 200px;
-    border-radius: 70px;
-    background-color: rgba(184, 178, 178, .3);
-}
-.massage a {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto; 
-    border-radius: 25px;
-}
-.massage a:nth-child(1) {
-    margin-top: 10px;
-}
-.massage a:nth-child(3) {
-    margin-bottom: 10px;
-}
-.massage a div {
-    width: 100%;
-    height: 100%;
-}
-.massage a div::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-family: 'icomoon';
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    transition: all .5;
-}
-.massage a:hover div::before {
-    transform: scale(1.1);
-}
-.massage a .fb::before {
-    content: '\e90f';
-    color: #1377ef;
-}
-.massage a .line::before {
-    content: '\e910';
-    color: #00c327;
-}
-.massage a .tw::before {
-    content: '\e911';
-    color: #15a2ef;
-}
-
 /* container */
 .container {
     width: 84%;
@@ -219,21 +161,21 @@ body {
 }
 .contain-row1 .pic ,
 .contain-row2 .pic{
-    width: 400px;
+    width: 40%;
     height: 300px;
 }
 .contain-row1 .pic {
     background: url(../upload/containrow1.jpg) no-repeat center center;
-    background-size: 400px auto;
+    background-size: cover;
 }
 .contain-row2 .pic {
     background: url(../upload/content2.jpg) no-repeat center center;
-    background-size: 400px auto;
+    background-size: cover;
 }
 
 .contain-row1 .row1-content,
 .contain-row2 .row2-content {
-    width: 650px;
+    width: 60%;
     height: 300px;
     padding: 10px 20px ;
 }
@@ -250,4 +192,64 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
+}
+/* bedstyle commonarea*/
+.bedstyle {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 50px;
+}
+.bedstyle div[class^="bedstyle-"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 33.33%;
+    height: 100%;
+    padding: 0 30px;
+    /* background-color: #fff; */
+}
+.bedstyle div:nth-child(2) {
+    margin: 0 2% 0 2%;
+}
+.bedstyle div[class^="bedstyle-"] h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex: 20%;
+    font-size: 20px;
+    line-height: 50%;
+} 
+.bedstyle div[class^="bedstyle-"] h5 a {
+    display: inline-block;
+    color: gray;
+}
+.bedstyle div[class^="bedstyle-"] h5 a:hover {
+    color: rgba(0,0,0,.3);
+}
+.bedstyle div[class^="bedstyle-"] span{
+    flex: 80%;
+    overflow: hidden;
+}
+.bedstyle div[class^="bedstyle-"] span a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .6s linear;
+}
+.bedstyle div[class^="bedstyle-"] span a:hover {
+    transform: scale(1.1);
+}
+/* bedstyle */
+.bedstyle .bedstyle-1 .bedstyle-1-bd a{
+    background: url(../upload/style_1.jpg)no-repeat center center;
+    background-size: 100% auto;
+}
+.bedstyle .bedstyle-2 .bedstyle-2-bd a{
+    background: url(../upload/style2.jpg)no-repeat center center;
+    background-size: cover;
+}
+.bedstyle .bedstyle-3 .bedstyle-3-bd a{
+    background: url(../upload/style3.jpg)no-repeat center center;
+    background-size: cover;
 }

@@ -1,0 +1,220 @@
+@import "./common.css";
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+    background: url(../images/criss-cross.png);
+}
+/* banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    padding: 0 50px;
+    background: url(../images/700.jpg) no-repeat;
+    opacity: .7;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 500px;
+}
+
+.content h4 {
+    font-size: 36px;
+}
+
+.content p {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    color: gray;
+}
+
+.content div {
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    background-color: brown;
+    overflow: hidden;
+}
+
+.content .buy {
+    float: left;
+    margin-left: 20px;
+}
+
+.content .more {
+    float: right;
+    margin-right: 20px;
+}
+
+.content div a {
+    position: relative;
+    display: block;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+.content div a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.content div a:hover span {
+    width: 100%;
+}
+
+.content div a:hover {
+    color: #fff;
+}
+/* navbar */
+.logo {
+    width: 100px;
+    height: 100%;
+    font-size: 34px;
+    line-height: 70px;
+}
+.logo a {
+    color: rgb(32, 29, 29);
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    background-color: rgba(0,0,0, .3);
+}
+
+.nav ul {
+    display: flex;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+.nav ul li {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.nav ul li:last-child {
+    padding-right: 0;
+}
+
+.nav ul li a {
+    position: relative;
+    display: block;
+    height: 100%;
+    color: white;
+}
+
+.nav ul li a span {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 10%;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.nav ul li a:hover span {
+    width: 100%;
+}
+/* massage */
+.massage {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 10px;
+    right: 20px;
+    width: 70px;
+    height: 200px;
+    border-radius: 70px;
+    background-color: rgba(184, 178, 178, .3);
+}
+.massage div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; 
+    border-radius: 25px;
+    background-color: pink;
+}
+.massage div:nth-child(1) {
+    margin-top: 10px;
+}
+.massage div:nth-child(3) {
+    margin-bottom: 10px;
+}
+.massage div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'icomoon';
+    font-size: 20px;
+}
+
+/* container */
+.container {
+    width: 1200px;
+    height: 1000px;
+    /* background-color: red; */
+    margin: 0 auto;  
+}
+.container .contain-row1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    background-color: white;
+}
+.contain-row1 .pic {
+    width: 400px;
+    height: 300px;
+    background: url(../upload/containrow1.jpg) no-repeat center center;
+    background-size: 400px auto;
+}
+.contain-row1 .row1-content {
+    width: 650px;
+    height: 300px;
+    padding: 10px 20px ;
+}
+.contain-row1 .row1-content h4 {
+    font-size: 38px;
+}
+.contain-row1 .row1-content p {
+    margin-top: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}

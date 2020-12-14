@@ -4,7 +4,6 @@ body {
     min-width: 375px;
     margin: 0 auto;
     background-color: rgba(235, 233, 233, .1);
-    height: 3000px;
 }
 /* banner */
 .banner {
@@ -104,6 +103,7 @@ body {
     height: 70px;
     padding: 0 50px;
     background-color: rgba(0,0,0, .3);
+    z-index: 9999;
 }
 
 .nav ul {
@@ -145,7 +145,6 @@ body {
 /* container */
 .container {
     width: 84%;
-    /* background-color: red; */
     margin: 0 auto;  
 }
 .container .contain-row1,
@@ -251,5 +250,18 @@ body {
 }
 .bedstyle .bedstyle-3 .bedstyle-3-bd a{
     background: url(../upload/style3.jpg)no-repeat center center;
+    background-size: cover;
+}
+/* advertise */
+.advertise {
+    width: 80%;
+    margin: 50px auto;  
+    
+}
+.advertise .advertise_pic {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: url(../upload/ad12.jpg) no-repeat center center;
     background-size: cover;
 }

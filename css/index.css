@@ -81,6 +81,9 @@ body {
 .content div a:hover {
     color: #fff;
 }
+.nav_list {
+    display: none;
+}
 /* navbar */
 .logo {
     width: 100px;
@@ -142,6 +145,10 @@ body {
 .nav ul li a:hover span {
     width: 100%;
 }
+.navicon {
+    display: none;
+}
+
 /* container */
 .container {
     width: 84%;
@@ -242,7 +249,7 @@ body {
 /* bedstyle */
 .bedstyle .bedstyle-1 .bedstyle-1-bd a{
     background: url(../upload/style_1.jpg)no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover;
 }
 .bedstyle .bedstyle-2 .bedstyle-2-bd a{
     background: url(../upload/style2.jpg)no-repeat center center;

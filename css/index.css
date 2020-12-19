@@ -261,7 +261,9 @@ body {
 .advertise .advertise_pic {
     display: block;
     width: 100%;
-    height: 500px;
-    background: url(../upload/ad12.jpg) no-repeat center center;
-    background-size: cover;
+    height: 600px;
+}
+.advertise .advertise_pic img{
+    width: 100%;
+    height: 100%;
 }

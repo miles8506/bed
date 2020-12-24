@@ -1,7 +1,4 @@
 @import "common.css";
-html {
-  width: 100%;
-}
 .navbar {
   padding: 0 10px 0 30px;
 }
@@ -39,6 +36,14 @@ html {
   color: #fff;
 }
 .banner {
-  width: 100%;
   padding: 0;
+}
+.banner .content {
+  position: relative;
+  left: 14px;
+  width: 100%;
+}
+.banner .content .icon_wrap {
+  flex-direction: column;
+  align-items: center;
 }

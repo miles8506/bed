@@ -22,7 +22,7 @@
   top: 70px;
   left: 0;
   width: 100%;
-  background-color: #c74f4f;
+  background-color: #333;
   z-index: 999;
 }
 .nav_list li {
@@ -41,9 +41,11 @@
 .banner .content {
   position: relative;
   left: 14px;
+  top: 100px;
   width: 100%;
 }
 .banner .content .icon_wrap {
+  height: 200px;
   flex-direction: column;
   align-items: center;
 }

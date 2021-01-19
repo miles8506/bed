@@ -14,13 +14,17 @@ window.addEventListener('load', () => {
             flag1--;
         };
     });
+    // topicon
     const tophigh = document.querySelector('.contain-row2');
-    // const topicon = document.querySelector('.topicon')
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > tophigh.offsetTop) {
             $('.topicon').fadeIn(500);
         } else {
             $('.topicon').fadeOut(500);
-        }
-    })
+        };
+    });
+    var topicon = document.querySelector('.topicon');
+    topicon.addEventListener('click', () => {
+        move2(window, 0);
+    });
 });

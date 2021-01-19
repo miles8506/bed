@@ -1,7 +1,7 @@
 @import "./common.css";
 body {
     max-width: 1440px;
-    min-width: 375px;
+    min-width: 360px;
     margin: 0 auto;
     background-color: rgba(235, 233, 233, .1);
 }
@@ -28,9 +28,9 @@ body {
 }
 
 .content p {
-    margin-top: 15px;
+    margin: 15px 0 70px 0;
+    padding-right: 16px;
     font-size: 20px;
-    margin-bottom: 70px;
     color: gray;
 }
 

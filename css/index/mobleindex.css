@@ -37,6 +37,7 @@
 }
 .banner {
   padding: 0;
+  height: 650px;
 }
 .banner .content {
   position: relative;
@@ -45,7 +46,62 @@
   width: 100%;
 }
 .banner .content .icon_wrap {
-  height: 200px;
+  height: 170px;
   flex-direction: column;
   align-items: center;
+  padding-right: 30px;
+}
+.banner .content .icon_wrap .buy {
+  margin: 0;
+}
+.banner .content .icon_wrap .more {
+  margin: 0;
+}
+.massage {
+  display: none;
+}
+.container div .pic {
+  display: none;
+}
+.container div .row1-content,
+.container div .row2-content {
+  width: 100%;
+  height: 100%;
+}
+.container div .row1-content h4,
+.container div .row2-content h4 {
+  width: 100%;
+  height: 50px;
+}
+.container div .row1-content p,
+.container div .row2-content p {
+  width: 100%;
+  height: 240px;
+  -webkit-line-clamp: 8;
+}
+.bedstyle {
+  display: block;
+  height: 1000px;
+  margin-top: 30px;
+}
+.bedstyle div[class^="bedstyle-"] {
+  height: 320px;
+  margin-bottom: 15px;
+}
+.advertise {
+  height: 500px;
+}
+.footer {
+  padding: 20px 10px 0;
+}
+.footer .copyright {
+  margin-top: 25px;
+}
+.topicon {
+  right: 5px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 48px;
 }

@@ -92,7 +92,8 @@
   height: 500px;
 }
 .footer {
-  padding: 20px 10px 0;
+  height: 250px;
+  padding: 40px 10px 0;
 }
 .footer .copyright {
   margin-top: 25px;

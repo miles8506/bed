@@ -16,26 +16,8 @@
 .navbar .nav {
   display: none;
 }
-.nav_list {
-  display: none;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  z-index: 999;
-}
-.nav_list li {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 20;
-}
-.nav_list li a {
-  color: #fff;
-}
 .banner {
+  position: relative;
   padding: 0;
   height: 650px;
 }
@@ -56,6 +38,47 @@
 }
 .banner .content .icon_wrap .more {
   margin: 0;
+}
+.banner .nav_items {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 480px;
+  width: 100%;
+  background-color: #000000;
+}
+.banner .nav_items li {
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.banner .nav_items li a {
+  width: 100%;
+  color: #ffffff;
+}
+.banner .nav_items li a .nav_style {
+  display: none;
+}
+.banner .nav_items .style_toggle {
+  position: relative;
+}
+.banner .nav_items .style_toggle .style_up {
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  font-family: 'icomoon';
+}
+.banner .nav_items .style_toggle .nav_style {
+  display: none;
+  height: 180px;
+  width: 100%;
+}
+.banner .nav_items .style_toggle .nav_style li {
+  height: 60px;
+  width: 100%;
 }
 .massage {
   display: none;
@@ -88,8 +111,8 @@
   height: 320px;
   margin-bottom: 15px;
 }
-.advertise {
-  height: 500px;
+.share {
+  display: none;
 }
 .footer {
   height: 250px;

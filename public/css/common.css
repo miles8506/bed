@@ -42,7 +42,29 @@
   font-size: 20px;
   padding: 0 20px;
 }
-
+.nav ul li:nth-child(2){
+ position: relative;
+}
+.nav .style_items {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 17px;
+  width: 90px;
+  height: 150px;
+  text-align: center;
+  background-color: rgba(0,0,0, .3);
+}
+.nav .style_items a {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 50px;
+}
+.nav .style_items a:hover {
+  color: rgba(26, 23, 23, 0.3);
+}
 .nav ul li:last-child {
   padding-right: 0;
 }
@@ -70,6 +92,9 @@
 .navicon {
   display: none;
 }
+
+
+
 /* massage */
 .massage {
   position: fixed;
@@ -183,6 +208,7 @@
   cursor: pointer;
   font-family: 'icomoon';
   background-color: rgba(0,0,0,.2);
+  z-index: 999;
 }
 .topicon:hover {
   color: #fff;

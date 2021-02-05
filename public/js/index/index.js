@@ -1,17 +1,19 @@
 window.addEventListener('load', () => {
-    // moblenav區塊
-    const navicon = document.querySelector('.navicon');
-    const nav_list = document.querySelector('.nav_list');
-    let flag1 = 0;
-    navicon.addEventListener('click', () => {
-        if (flag1 === 0) {
-            nav_list.style.display = 'block';
-            document.body.style.backgroundColor = 'rgba(0,0,0, .3)';
-            flag1++;
-        } else if (flag1 === 1) {
-            nav_list.style.display = 'none';
-            document.body.style.backgroundColor = '';
-            flag1--;
+    // navicon(m)
+    $('.navicon').on('click', function () {
+        $('.nav_items').slideToggle(400);
+    });
+    // 風格介紹
+    let flag = 0;
+    $('.style_toggle').on('click', function () {
+        if (flag === 0) {
+            $('.nav_style').slideDown(400);
+            $('.style_up').html('');
+            flag++;
+        } else if (flag === 1) {
+            $('.nav_style').slideUp(400);
+            $('.style_up').html('');
+            flag--;
         };
     });
     // topicon
@@ -27,21 +29,33 @@ window.addEventListener('load', () => {
     topicon.addEventListener('click', () => {
         move2(window, 0);
     });
+
+
+    // share
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
+    // .style_items
+    $('.stylebtn').on('mouseover', function () {
+        $('.style_items').stop().slideDown(400);
+    });
+    $('.stylebtn').on('mouseout', function () {
+        $('.style_items').stop().slideUp(400);
+    });
 });
-// share
-var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+

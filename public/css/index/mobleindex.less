@@ -165,25 +165,24 @@
     width: 50%;
     height: 50px;
     margin: 20px auto 0;
-    .message_m ul {
+    ul {
         display: flex;
         justify-content: space-between;
         height: 100%;
         line-height: 50px;
-        .message_m ul li {
+        li {
             display: none;
             font-family: 'icomoon';
             font-size: 35px;
-          }
-          
-      }
-      ul li:nth-child(1) a {
-        color: #1377ef 
-      }
-      ul li:nth-child(2) a {
-        color: #00c327 
-      }
-      ul li:nth-child(3) a {
-        color: #15a2ef
-      }      
+            &:nth-child(1) a {
+                color: #1377ef 
+            }
+            &:nth-child(2) a {
+                color: #00c327 
+            }
+            &:nth-child(3) a {
+                color: #15a2ef
+            }         
+        } 
+    }     
 }

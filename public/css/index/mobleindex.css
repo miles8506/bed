@@ -135,13 +135,13 @@
   height: 50px;
   margin: 20px auto 0;
 }
-.message_m .message_m ul {
+.message_m ul {
   display: flex;
   justify-content: space-between;
   height: 100%;
   line-height: 50px;
 }
-.message_m .message_m ul .message_m ul li {
+.message_m ul li {
   display: none;
   font-family: 'icomoon';
   font-size: 35px;

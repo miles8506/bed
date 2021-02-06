@@ -20,9 +20,9 @@ window.addEventListener('load', () => {
     const tophigh = document.querySelector('.contain-row2');
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > 800) {
-            $('.topicon').stop().fadeIn(500);
+            $('.topicon').stop().fadeIn(300);
         } else {
-            $('.topicon').stop().fadeOut(500);
+            $('.topicon').stop().fadeOut(300);
         };
     });
     var topicon = document.querySelector('.topicon');

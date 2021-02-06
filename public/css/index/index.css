@@ -5,9 +5,13 @@ body {
     margin: 0 auto;
     background-color: rgba(235, 233, 233, .1);
 }
-.nav_list {
+.nav_items {
     display: none;
-  }
+}
+
+.message_m {
+    display: none;
+}
 /* banner */
 .banner {
     position: relative;

@@ -57,5 +57,15 @@ window.addEventListener('load', () => {
     $('.stylebtn').on('mouseout', function () {
         $('.style_items').stop().slideUp(400);
     });
+
+
+    // message_m
+    const title = document.querySelector('.bedstyle-2-bh');
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > title.offsetTop) {
+            $('.massage_icon').fadeIn(500);
+        }
+    })
 });
+
 

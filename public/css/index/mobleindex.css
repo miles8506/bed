@@ -129,3 +129,29 @@
   border-radius: 25px;
   line-height: 48px;
 }
+.message_m {
+  display: block;
+  width: 50%;
+  height: 50px;
+  margin: 20px auto 0;
+}
+.message_m .message_m ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  line-height: 50px;
+}
+.message_m .message_m ul .message_m ul li {
+  display: none;
+  font-family: 'icomoon';
+  font-size: 35px;
+}
+.message_m ul li:nth-child(1) a {
+  color: #1377ef;
+}
+.message_m ul li:nth-child(2) a {
+  color: #00c327;
+}
+.message_m ul li:nth-child(3) a {
+  color: #15a2ef;
+}

@@ -218,3 +218,52 @@ body {
   color: #fff;
   background-color: rgba(0,0,0,.4);
 }
+/* nav_items */
+.nav_items {
+  display: none;
+}
+.nav_items {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+}
+.nav_items li {
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.nav_items li a {
+  width: 100%;
+  color: #ffffff;
+}
+.nav_items li a .nav_style {
+  display: none;
+}
+.nav_items .style_toggle {
+  position: relative;
+}
+.nav_items .style_toggle .style_up {
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  font-family: 'icomoon';
+}
+.nav_items .style_toggle .nav_style {
+  display: none;
+  height: 180px;
+  width: 100%;
+}
+.nav_items .style_toggle .nav_style li {
+  height: 60px;
+  width: 100%;
+}
+
+/* message_m */
+.message_m {
+  display: none;
+}

@@ -1,6 +1,7 @@
 @import "../common.css";
 .container {
-    width: 100%;
+    max-width: 1440px;
+    min-width: 360px;
     height: 800px;
     padding: 150px 200px 0;
     background-color: #fff;
@@ -11,7 +12,6 @@
     }
     .wrap {
         display: flex;
-        
         width: 100%;
         height: 500px;
         background-color: red;
@@ -28,6 +28,9 @@
     .pic {
         flex: 40%;
         background-color: purple;
-        // display: inline-block;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
     }
 }

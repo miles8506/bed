@@ -36,6 +36,11 @@ body {
   background-color: rgba(0,0,0, .3);
   z-index: 9999;
 }
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 0 25px;
+  }
+}
 
 .nav ul {
   display: flex;
@@ -167,12 +172,18 @@ body {
   text-align: center;
   color: #fff;
 } 
-.footer ul {
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 3% 15px 0 15px;
+  }
+}
+.footer .row {
   margin: 0 auto;
   width: 350px;
   height: 40px;
 }
-.footer ul li {
+
+.footer .row li {
   float: left;
   width: 100px;
   background-color: #333;
@@ -183,20 +194,21 @@ body {
   border: 1px solid #fff;
   overflow: hidden;
 }
-.footer ul li:nth-child(3) {
+.footer .row li:nth-child(3) {
   margin-right: 0;
 }
-.footer ul li a {
+.footer .row li a {
   display: block;
   width: 100%;
   color: #fff;
 }
-.footer ul li a:hover {
+.footer .row li a:hover {
   background-color: rgba(0,0,0,.5);
 }
 .footer .copyright {
   margin-top: 35px;
 }
+
 /* topicon */
 .topicon {
   display: none;

@@ -1,7 +1,4 @@
 @import "../common.css";
-.navbar {
-  padding: 0 10px 0 30px;
-}
 .navbar .navicon {
   display: block;
   float: right;

@@ -7,7 +7,7 @@
   background-color: #fff;
 }
 .container .title {
-  padding-left: 30px;
+  margin-bottom: 15px;
   font-size: 45px;
   font-family: 'Libre Baskerville', serif;
 }
@@ -15,20 +15,20 @@
   display: flex;
   width: 100%;
   height: 500px;
-  background-color: red;
 }
 .container .content {
   flex: 60%;
-  padding: 30px;
+  padding: 15px 30px 30px;
   letter-spacing: 2.5px;
   font-size: 18px;
-  background-color: pink;
+  text-justify: distribute;
+  text-align: justify;
+  background-color: #f3efef;
 }
 .container .pic {
   flex: 40%;
-  background-color: purple;
 }
-.container .pic .swiper-container {
+.container .pic img {
   width: 100%;
   height: 100%;
 }

@@ -6,6 +6,12 @@
   font-style: normal;
   font-display: block;
 }
+body {
+  max-width: 1440px;
+  min-width: 360px;
+  margin: 0 auto;
+  background-color: rgba(235, 233, 233, .1);
+}
 /* navbar */
 .logo {
   width: 100px;

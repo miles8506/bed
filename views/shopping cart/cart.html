@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/shopping cart/cart.css">
+    <link rel="stylesheet" href="../../public/css/shopping cart/mobilecart992.css"
+        media="screen and (max-width: 992px)">
+    <link rel="stylesheet" href="../../public/css/shopping cart/mobilcart767.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="../../public/css/index/index.css">
+    <link rel="stylesheet" href="../../public/css/index/mobleindex.css" media="screen and (max-width: 767px)">
+
+</head>
+
+<body>
+    <!-- nav_list start -->
+    <section class="nav_items">
+        <li><a href="javascript:;">首頁</a></li>
+        <li class="style_toggle"><a href="javascript:;">風格介紹<span class="style_up"></span>
+                <ul class="nav_style">
+                    <li><a href="./views/styleclass/classic.html">經典簡約風格</a></li>
+                    <li><a href="./views/styleclass/animal.html">典藏動物風格</a></li>
+                    <li><a href="./views/styleclass/clean.html">純淨柔和風格</a></li>
+                </ul>
+            </a></li>
+        <li><a href="javascript:;">購物車</a></li>
+        <li><a href="./views/about/about.html">關於我們</a></li>
+        <li><a href="javascript:;">登入</a></li>
+    </section>
+    <!-- nav_list end -->
+    <!-- navbar start -->
+    <section class="navbar">
+        <h1 class="logo">
+            <a href="./index.html">傢俱</a>
+        </h1>
+        <div class="nav">
+            <ul>
+                <li><a href="./index.html">首頁<span></span></a></li>
+                <li class="stylebtn"><a href="javascript:;">風格介紹<span></span></a>
+                    <div class="style_items">
+                        <a href="./views/styleclass/classic.html">經典簡約風格</a>
+                        <a href="./views/styleclass/animal.html">典藏動物風格</a>
+                        <a href="./views/styleclass/clean.html">純淨柔和風格</a>
+                    </div>
+                </li>
+
+                <li><a href="./views/about/about.html">關於我們<span></span></a></li>
+                <li><a href="＃">購物車<span></span></a></li>
+                <li><a href="＃">登入<span></span></a></li>
+            </ul>
+        </div>
+        <div class="navicon"></div>
+    </section>
+    <!-- navbar end -->
+    <!-- shopcar start -->
+    <section class="shopcar">
+        <div class="shopbar">
+            <span style="color: rgb(230, 116, 116)">購物車<em class="triangle"></em></span>
+            <span>結帳</span>
+            <span>結束</span>
+        </div>
+        <div class="shop_container">
+            <form action="" method="" id="shop_form">
+                <table>
+                    <thead>
+                        <th>商品圖</th>
+                        <th>商品名稱</th>
+                        <th>售價</th>
+                        <th>數量</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="shop_pic"><img src="../../public/upload/ad31.jpg" alt=""></div>
+                            </td>
+                            <td>傢俱組</td>
+                            <td>
+                                <div>NT$3,000</div>
+                                <div>NT$5,000<span class="line"></span></div>
+                            </td>
+                            <td>
+                                <div class="quantity-form">
+                                    <a href="javascript:;" class="decrement">-</a>
+                                    <input type="text" class="itxt" value="1"
+                                        oninput="value=value.replace(/[^\d]/g,'')">
+                                    <a href="javascript:;" class="increment">+</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shop_remove"><a href="javascript:;">移除</a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix total_wrap">
+                    <div class="totalBox">
+                        <div class="subtotal">小計<span>NT232</span></div>
+                        <div class="carry">運費<span>NT2131</span></div>
+                        <div class="total">合計<span>NT23123</span></div>
+                    </div>
+                </div>
+                <button class="next"><a href="javascript:;">下一步</a></button>
+            </form>
+        </div>
+    </section>
+    <!-- shopcar end -->
+    <!-- footer start-->
+    <footer class="footer">
+        <ul class="row">
+            <li><a href="javascript:;">條款聲明</a></li>
+            <li><a href="javascript:;">注意事項</a></li>
+            <li><a href="javascript:;">聯絡我們</a></li>
+        </ul>
+        <div class="copyright">
+            傢俱股份有限公司 新北市新北市新北市新北市新北市新北市新北市<br>
+            電話:(02)2222-2222 | 營業時間:00:00~24:00
+            Copyright@
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

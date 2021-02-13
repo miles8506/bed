@@ -1,0 +1,150 @@
+@import "../common.css";
+.shopcar {
+    margin: 100px 200px;
+    padding: 30px;
+    background-color: rgb(230, 221, 221);
+    overflow: hidden;
+    .shopbar {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        height: 50px;
+        padding: 0 15px 0 ;
+        border: 1px solid gray;
+        border-radius: 25px;
+        span {
+            position: relative;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            .triangle {
+                position: absolute;
+                top: 15px;
+                right: -100%;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-top: 10px solid rgb(230, 221, 221);
+                border-right: 10px solid rgb(230, 221, 221);
+                border-bottom: 10px solid rgb(230, 221, 221);
+                border-left: 10px solid rgb(65, 61, 61);
+            }
+        }
+    }
+    .shop_container {
+        margin-top: 50px;
+        #shop_form{
+            table {
+                width: 100%;
+                text-align: center;
+                thead {
+                    th{
+                        padding-bottom: 15px;
+                        // &:nth-child(1) {
+                        //   width: 200px;  
+                        // }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            height: 100px;
+                            .quantity-form {
+                                .decrement,
+                                .increment {
+                                    color :gray;
+                                    &:hover {
+                                        color: rgb(41, 39, 39);
+                                    }
+                                }
+                                .itxt {
+                                    width: 50px;
+                                    text-align: center;
+                                }
+                            }
+                            .shop_pic {
+                                display: inline-block;
+                                width: 100px;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .shop_remove {
+                                display: inline-block;
+                                width: 50px;
+                                height: 30px;
+                                border-radius: 15px;
+                                background-color: rgb(109, 104, 104);
+                                line-height: 30px;
+                                a {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 30px;
+                                    color: #fff;
+                                    &:hover {
+                                        background-color: rgb(41, 39, 39);
+                                        border-radius: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .total_wrap {
+                margin-top: 80px;
+                .totalBox {
+                    text-align: left;
+                    float: right;
+                    width: 40%;
+                    div {
+                        margin-left: 100px;
+                        height: 60px;
+                        line-height: 60px;
+                        border-bottom: 1px solid gray;
+                        span {
+                            float: right;
+                        }
+                        &:nth-child(3) {
+                            span {
+                                color: red;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }    
+            }
+            .next {
+                float: right;
+                width: 100px;
+                height: 50px;
+                background-color: rgb(109, 104, 104);
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #fff;
+                    &:hover {
+                        background-color: rgb(41, 39, 39);
+                    }
+                }
+            }
+        }
+    }
+}
+// 清除浮動
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    margin-bottom: 80px;
+}
+
+.clearfix {
+    *zoom: 1;
+}

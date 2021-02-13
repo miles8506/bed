@@ -1,0 +1,76 @@
+.shop_container {
+    #shop_form {
+        table {
+            thead {
+                display: none;
+            }
+            tbody {
+                tr {
+                    td {
+                        position: relative;
+                        display: block;
+                        line-height: 100px;
+                        text-align: right;
+                        padding-right: 5px;
+                        &:nth-child(1) {
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content:"商品圖"
+                            }    
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content:"商品名稱"
+                            }    
+                        }
+                        &:nth-child(3) {
+                            div {
+                                display: inline-block;
+                            }
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content:"售價"
+                            }    
+                        }
+                        &:nth-child(4) {
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content:"數量"
+                            }    
+                        }
+                        &:nth-child(5) {
+                            .shop_remove {
+                                text-align: center;
+                            }
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content:"操作"
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+        .total_wrap {
+            margin-top: 50px !important;
+            padding-right: 5px !important;
+            .totalBox {
+                width: 100% !important;
+            }
+        }
+        .next {
+           margin-right: 5px;
+        }
+    }
+}

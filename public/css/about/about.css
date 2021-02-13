@@ -1,0 +1,15 @@
+@import "../common.css";
+.title {
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+.title .about {
+  display: inline-block;
+}
+.title .about .underline {
+  transform: translateY(-200%);
+  display: inline-block;
+  height: 10px;
+  width: 100%;
+  background-color: grey;
+}

@@ -1,0 +1,56 @@
+.shop_container #shop_form table thead {
+  display: none;
+}
+.shop_container #shop_form table tbody tr td {
+  position: relative;
+  display: block;
+  line-height: 100px;
+  text-align: right;
+  padding-right: 5px;
+}
+.shop_container #shop_form table tbody tr td:nth-child(1)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "商品圖";
+}
+.shop_container #shop_form table tbody tr td:nth-child(2)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "商品名稱";
+}
+.shop_container #shop_form table tbody tr td:nth-child(3) div {
+  display: inline-block;
+}
+.shop_container #shop_form table tbody tr td:nth-child(3)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "售價";
+}
+.shop_container #shop_form table tbody tr td:nth-child(4)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "數量";
+}
+.shop_container #shop_form table tbody tr td:nth-child(5) .shop_remove {
+  text-align: center;
+}
+.shop_container #shop_form table tbody tr td:nth-child(5)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "操作";
+}
+.shop_container #shop_form .total_wrap {
+  margin-top: 50px !important;
+  padding-right: 5px !important;
+}
+.shop_container #shop_form .total_wrap .totalBox {
+  width: 100% !important;
+}
+.shop_container #shop_form .next {
+  margin-right: 5px;
+}

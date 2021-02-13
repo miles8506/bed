@@ -1,0 +1,134 @@
+@import "../common.css";
+.shopcar {
+  margin: 100px 200px;
+  padding: 30px;
+  background-color: #e6dddd;
+  overflow: hidden;
+}
+.shopcar .shopbar {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  height: 50px;
+  padding: 0 15px 0 ;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+.shopcar .shopbar span {
+  position: relative;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.shopcar .shopbar span .triangle {
+  position: absolute;
+  top: 15px;
+  right: -100%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 10px solid #e6dddd;
+  border-right: 10px solid #e6dddd;
+  border-bottom: 10px solid #e6dddd;
+  border-left: 10px solid #413d3d;
+}
+.shopcar .shop_container {
+  margin-top: 50px;
+}
+.shopcar .shop_container #shop_form table {
+  width: 100%;
+  text-align: center;
+}
+.shopcar .shop_container #shop_form table thead th {
+  padding-bottom: 15px;
+}
+.shopcar .shop_container #shop_form table tbody tr td {
+  height: 100px;
+}
+.shopcar .shop_container #shop_form table tbody tr td .quantity-form .decrement,
+.shopcar .shop_container #shop_form table tbody tr td .quantity-form .increment {
+  color: gray;
+}
+.shopcar .shop_container #shop_form table tbody tr td .quantity-form .decrement:hover,
+.shopcar .shop_container #shop_form table tbody tr td .quantity-form .increment:hover {
+  color: #292727;
+}
+.shopcar .shop_container #shop_form table tbody tr td .quantity-form .itxt {
+  width: 50px;
+  text-align: center;
+}
+.shopcar .shop_container #shop_form table tbody tr td .shop_pic {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+}
+.shopcar .shop_container #shop_form table tbody tr td .shop_pic img {
+  width: 100%;
+  height: 100%;
+}
+.shopcar .shop_container #shop_form table tbody tr td .shop_remove {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #6d6868;
+  line-height: 30px;
+}
+.shopcar .shop_container #shop_form table tbody tr td .shop_remove a {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  color: #fff;
+}
+.shopcar .shop_container #shop_form table tbody tr td .shop_remove a:hover {
+  background-color: #292727;
+  border-radius: 15px;
+}
+.shopcar .shop_container #shop_form .total_wrap {
+  margin-top: 80px;
+}
+.shopcar .shop_container #shop_form .total_wrap .totalBox {
+  text-align: left;
+  float: right;
+  width: 40%;
+}
+.shopcar .shop_container #shop_form .total_wrap .totalBox div {
+  margin-left: 100px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid gray;
+}
+.shopcar .shop_container #shop_form .total_wrap .totalBox div span {
+  float: right;
+}
+.shopcar .shop_container #shop_form .total_wrap .totalBox div:nth-child(3) span {
+  color: red;
+  font-weight: 700;
+}
+.shopcar .shop_container #shop_form .next {
+  float: right;
+  width: 100px;
+  height: 50px;
+  background-color: #6d6868;
+}
+.shopcar .shop_container #shop_form .next a {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+.shopcar .shop_container #shop_form .next a:hover {
+  background-color: #292727;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  margin-bottom: 80px;
+}
+.clearfix {
+  *zoom: 1;
+}

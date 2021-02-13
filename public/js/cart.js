@@ -55,6 +55,24 @@ const amount = function (num, price, that) {
 };
 
 //remove
+let that;
 $('.shop_remove').on('click', function () {
-    alert('123')
-})
+    that = $(this);
+    $('body div').eq(0).addClass('bg');
+    $('.alert_del').show();
+});
+$('.not').on('click', function () {
+    removeSet();
+});
+$('.yes').on('click', function () {
+    removeSet();
+    that.parents('tr').remove();
+    amountget();
+});
+
+
+//remove封裝
+const removeSet = function () {
+    $('body div').eq(0).removeClass('bg');
+    $('.alert_del').hide();
+};

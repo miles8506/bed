@@ -47,6 +47,13 @@
   left: 0;
   content: "操作";
 }
+.shop_container #shop_form .alert_del {
+  width: 300px !important;
+  height: 150px !important;
+}
+.shop_container #shop_form .alert_del p {
+  margin-top: 20px !important;
+}
 .shop_container #shop_form .total_wrap {
   margin-top: 80px !important;
   padding-right: 5px !important;

@@ -241,6 +241,7 @@ body {
   left: 0;
   width: 100%;
   background-color: grey;
+  z-index: 99999;
 }
 .nav_items li {
   width: 100%;

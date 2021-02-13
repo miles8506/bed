@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../../public/css/base.css">
     <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/shopping cart/cart.css">
+    <link rel="stylesheet" href="../../public/css/shopping cart/mobilecart1200.css"
+        media="screen and (max-width: 1200px)">
+
     <link rel="stylesheet" href="../../public/css/shopping cart/mobilecart992.css"
         media="screen and (max-width: 992px)">
     <link rel="stylesheet" href="../../public/css/shopping cart/mobilcart767.css" media="screen and (max-width: 767px)">
@@ -23,34 +26,34 @@
         <li><a href="javascript:;">首頁</a></li>
         <li class="style_toggle"><a href="javascript:;">風格介紹<span class="style_up"></span>
                 <ul class="nav_style">
-                    <li><a href="./views/styleclass/classic.html">經典簡約風格</a></li>
-                    <li><a href="./views/styleclass/animal.html">典藏動物風格</a></li>
-                    <li><a href="./views/styleclass/clean.html">純淨柔和風格</a></li>
+                    <li><a href="../styleclass/classic.html">經典簡約風格</a></li>
+                    <li><a href="../styleclass/animal.html">典藏動物風格</a></li>
+                    <li><a href="../styleclass/clean.html">純淨柔和風格</a></li>
                 </ul>
             </a></li>
-        <li><a href="javascript:;">購物車</a></li>
-        <li><a href="./views/about/about.html">關於我們</a></li>
+        <li><a href="./cart.html">購物車</a></li>
+        <li><a href="../about/about.html">關於我們</a></li>
         <li><a href="javascript:;">登入</a></li>
     </section>
     <!-- nav_list end -->
     <!-- navbar start -->
     <section class="navbar">
         <h1 class="logo">
-            <a href="./index.html">傢俱</a>
+            <a href="../../index.html">傢俱</a>
         </h1>
         <div class="nav">
             <ul>
                 <li><a href="./index.html">首頁<span></span></a></li>
                 <li class="stylebtn"><a href="javascript:;">風格介紹<span></span></a>
                     <div class="style_items">
-                        <a href="./views/styleclass/classic.html">經典簡約風格</a>
-                        <a href="./views/styleclass/animal.html">典藏動物風格</a>
-                        <a href="./views/styleclass/clean.html">純淨柔和風格</a>
+                        <a href="../styleclass/classic.html">經典簡約風格</a>
+                        <a href="../styleclass/animal.html">典藏動物風格</a>
+                        <a href="../styleclass/clean.html">純淨柔和風格</a>
                     </div>
                 </li>
 
-                <li><a href="./views/about/about.html">關於我們<span></span></a></li>
-                <li><a href="＃">購物車<span></span></a></li>
+                <li><a href="../about/about.html">關於我們<span></span></a></li>
+                <li><a href="./cart.html">購物車<span></span></a></li>
                 <li><a href="＃">登入<span></span></a></li>
             </ul>
         </div>
@@ -60,7 +63,7 @@
     <!-- shopcar start -->
     <section class="shopcar">
         <div class="shopbar">
-            <span style="color: rgb(230, 116, 116)">購物車<em class="triangle"></em></span>
+            <span style="color: rgb(230, 116, 116) ;font-weight: 700;">購物車<em class="triangle"></em></span>
             <span>結帳</span>
             <span>結束</span>
         </div>
@@ -75,14 +78,37 @@
                         <th>操作</th>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="goods">
                             <td>
                                 <div class="shop_pic"><img src="../../public/upload/ad31.jpg" alt=""></div>
                             </td>
                             <td>傢俱組</td>
+                            <td class="sale_box">
+                                <div>NT$<span class="sale">3000</span>/<span class="set">1</span>組</div>
+                                <div class="origin">NT$5000/1組</div>
+                                <div class="hide price">3000</div>
+                            </td>
                             <td>
-                                <div>NT$3,000</div>
-                                <div>NT$5,000<span class="line"></span></div>
+                                <div class="quantity-form">
+                                    <a href="javascript:;" class="decrement">-</a>
+                                    <input type="text" class="itxt" value="1"
+                                        oninput="value=value.replace(/[^\d]/g,'')">
+                                    <a href="javascript:;" class="increment">+</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shop_remove"><a href="javascript:;">移除</a></div>
+                            </td>
+                        </tr>
+                        <tr class="goods">
+                            <td>
+                                <div class="shop_pic"><img src="../../public/upload/ad31.jpg" alt=""></div>
+                            </td>
+                            <td>經典組</td>
+                            <td class="sale_box">
+                                <div>NT$<span class="sale">4000</span>/<span class="set">1</span>組</div>
+                                <div class="origin">NT$6000/1組</div>
+                                <div class="hide price">4000</div>
                             </td>
                             <td>
                                 <div class="quantity-form">
@@ -100,9 +126,9 @@
                 </table>
                 <div class="clearfix total_wrap">
                     <div class="totalBox">
-                        <div class="subtotal">小計<span>NT232</span></div>
-                        <div class="carry">運費<span>NT2131</span></div>
-                        <div class="total">合計<span>NT23123</span></div>
+                        <div class="subtotal">小計<span>NT<em></em></span></div>
+                        <div class="carry">運費<span>NT300</span></div>
+                        <div class="total">合計<span>NT<em></em></span></div>
                     </div>
                 </div>
                 <button class="next"><a href="javascript:;">下一步</a></button>
@@ -124,6 +150,19 @@
         </div>
     </footer>
     <!-- footer end -->
+    <!-- topicon start -->
+    <div class="topicon" style="bottom: 50px">
+        
+    </div>
+    <!-- topicon end-->
+    <script src="../../public/jquery/jquery.min.js"></script>
+    <script src="../../public/js/move2.js"></script>
+    <script src="../../public/js/navicon(m).js"></script>
+    <script src="../../public/js/style_item.js"></script>
+    <script src="../../public/js/style_m.js"></script>
+    <script src="../../public/js/topicon_cart.js"></script>
+    <script src="../../public/js/cart.js"></script>
+
 </body>
 
 </html>

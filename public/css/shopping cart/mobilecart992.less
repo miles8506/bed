@@ -32,6 +32,11 @@
                             div {
                                 display: inline-block;
                             }
+                            .origin {
+                                &::before {
+                                    width: 100% !important;
+                                }
+                            }
                             &::before {
                                 position: absolute;
                                 top: 0;
@@ -63,7 +68,7 @@
             }
         }
         .total_wrap {
-            margin-top: 50px !important;
+            margin-top: 80px !important;
             padding-right: 5px !important;
             .totalBox {
                 width: 100% !important;

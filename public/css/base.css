@@ -44,7 +44,7 @@ body {
 
 .hide,
 .none {
-    display: none
+    display: none !important;
 }
 .clearfix:after {
     visibility: hidden;

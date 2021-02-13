@@ -23,6 +23,9 @@
 .shop_container #shop_form table tbody tr td:nth-child(3) div {
   display: inline-block;
 }
+.shop_container #shop_form table tbody tr td:nth-child(3) .origin::before {
+  width: 100% !important;
+}
 .shop_container #shop_form table tbody tr td:nth-child(3)::before {
   position: absolute;
   top: 0;
@@ -45,7 +48,7 @@
   content: "操作";
 }
 .shop_container #shop_form .total_wrap {
-  margin-top: 50px !important;
+  margin-top: 80px !important;
   padding-right: 5px !important;
 }
 .shop_container #shop_form .total_wrap .totalBox {

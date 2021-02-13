@@ -1,6 +1,7 @@
 // topicon
+const shopcar = document.querySelector('.shopcar');
 document.addEventListener('scroll', () => {
-    if (window.pageYOffset > 800) {
+    if (window.pageYOffset > shopcar.offsetTop) {
         $('.topicon').stop().fadeIn(300);
     } else {
         $('.topicon').stop().fadeOut(300);

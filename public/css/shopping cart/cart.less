@@ -51,22 +51,14 @@
                         border-bottom: 1px solid gray;
                         td {
                             height: 125px;
+                            .onsale_price {
+                                font-weight: 700;
+                            }
                             &:nth-child(3) {
                                 .origin {
                                     position: relative;
-                                    color: black;
-                                    font-weight: 700;
-                                    &::before {
-                                        content: '';
-                                        position: absolute;
-                                        top: 50%;
-                                        transform: translateY(-50%);
-                                        left:50%;
-                                        transform: translateX(-50%);
-                                        height: 2px;
-                                        width: 50%;
-                                        background-color: red;
-                                    }
+                                    color: gray;
+                                    text-decoration: line-through;
                                 }
                             }
                             .quantity-form {

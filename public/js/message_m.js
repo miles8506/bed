@@ -1,5 +1,4 @@
 // message_m
-
 const title = document.querySelector('.bedstyle-2-bh');
 const styleimg = document.querySelector('.stylepic img');
 window.addEventListener('scroll', function () {

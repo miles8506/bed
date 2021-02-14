@@ -52,21 +52,13 @@
 .shopcar .shop_container #shop_form table tbody tr td {
   height: 125px;
 }
-.shopcar .shop_container #shop_form table tbody tr td:nth-child(3) .origin {
-  position: relative;
-  color: black;
+.shopcar .shop_container #shop_form table tbody tr td .onsale_price {
   font-weight: 700;
 }
-.shopcar .shop_container #shop_form table tbody tr td:nth-child(3) .origin::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 50%;
-  background-color: red;
+.shopcar .shop_container #shop_form table tbody tr td:nth-child(3) .origin {
+  position: relative;
+  color: gray;
+  text-decoration: line-through;
 }
 .shopcar .shop_container #shop_form table tbody tr td .quantity-form .decrement,
 .shopcar .shop_container #shop_form table tbody tr td .quantity-form .increment {

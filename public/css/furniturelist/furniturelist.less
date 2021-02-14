@@ -1,0 +1,186 @@
+@import "../common.css";
+//點擊購物車視窗
+.cart_page {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 10px 8px 8px -5px rgba(0,0,0,.5);
+    z-index: 9999;
+    overflow: auto;
+    .wrap {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        .cart_page_pic {
+            flex: 1;
+            padding: 20px;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .goods_content {
+            flex: 1;
+            height: 100%;
+            padding: 20px 0 0 30px;
+            .goods_name {
+                margin-bottom: 20px;
+                font-size: 36px;
+                font-weight: 700;
+                color: black;
+            }
+            .onsale_price {
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            .origin_price {
+                font-size: 14px;
+                margin-bottom: 20px;
+                text-decoration: line-through;
+            }
+            .quantity-form {
+                margin-bottom: 20px;
+                .itxt {
+                    width: 50px;
+                    text-align: center;
+                    background-color: #fff;
+                }
+                .decrement,
+                .increment {
+                    color: gray;
+                }
+            }
+            .goods_infor {
+                display: inline-block;
+                color: gray;
+                margin-bottom: 10px;
+            }
+            .join_cart {
+                width: 70%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: gray;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+            .goods_infor:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+//點擊購物車視窗背景
+.bgc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: gray;
+    opacity: .5;
+}
+
+//container
+.container {
+    margin: 100px 100px;
+    padding: 20px;
+    text-align: center;
+    .title {
+        font-size: 36px;
+        color: black;
+    }
+    .content {
+        margin: 15px 0 20px;
+        font-size: 20px;
+    }
+    .goods_wrap {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                border: 2px solid #fff;
+                flex: 32%;  
+                height: 400px;
+                margin-right: 15px;
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(9) {
+                    margin-right: 0;
+                }
+                //圖片
+                .goods_pic {
+                    position: relative;
+                    padding: 10px;
+                    height: 250px;
+                    width: 100%;
+                    span {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        border-top: 35px solid rgb(212, 47, 47);
+                        border-right: 35px solid rgba(0,0,0,0);
+                        border-bottom: 35px solid rgba(0,0,0,0);
+                        border-left: 35px solid rgb(212, 47, 47);     
+                        &::before {
+                            content: 'on sale';
+                            position: absolute;
+                            top: -35px;
+                            left:-32px;
+                            line-height: 18px;
+                            color: #fff;
+                        
+                        }                 
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .goods_name,
+                .onsale_price,
+                .origin_price {
+                    margin-bottom: 8px;
+                }
+                .origin_price {
+                    text-decoration: line-through;
+                }
+                .onsale_price {
+                    font-weight: 700;
+                }
+                //立即購買
+                .buy {
+                    display: inline-block;
+                    height: 40px;
+                    width: 50%;
+                    line-height: 40px;
+                    background-color: gray;
+                    color: #fff;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+                &:hover {
+                    border: 2px solid rgb(224, 224, 30);
+                }
+            }
+        }
+    }
+}

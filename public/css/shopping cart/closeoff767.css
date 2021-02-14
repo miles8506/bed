@@ -1,0 +1,26 @@
+.container {
+    margin: 100px 0;
+    height: '';
+    line-height: '';
+}
+.container #shopform {
+    padding: 0 25px;
+}
+.container #shopform div {
+    height: 30px;
+    line-height: 10px;
+}
+.container #shopform div span {
+    height: 100%;
+    line-height: 22px;
+}
+.container #shopform .ps span {
+    height: 30px;
+}
+.container #shopform div input {
+    margin-top: 0;
+}
+.container #shopform p {
+    text-align: right;
+    padding-top: 5px;
+}

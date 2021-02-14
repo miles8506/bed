@@ -1,0 +1,21 @@
+.container {
+    margin: 100px 25px 0;
+    padding: 5px;
+}
+.cartbox .wrap {
+    display: block !important;
+}
+.cartbox a:hover {
+    background-color: gray !important;
+}
+.cartbox .quantity-form {
+    margin-bottom: 20px !important;
+}
+
+.container .information_box {
+    padding: 0;
+    margin-top: 0;
+}
+.container .information_bd {
+    padding: 20px 0 !important;
+}

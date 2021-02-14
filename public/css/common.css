@@ -12,6 +12,22 @@ body {
   margin: 0 auto;
   background-color: rgba(235, 233, 233, .1);
 }
+/* 點擊高亮後會有多餘的效果 需要變為透明 */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 移動端上ios的文本匡會有多餘的效果 需要清除該效果 */
+input {
+    -webkit-appearance: none;
+}
+
+/* 於移動端上長按連結或圖片時會有選單跑出來 清除該效果 */
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
 /* navbar */
 .logo {
   width: 100px;
@@ -279,4 +295,18 @@ body {
 /* message_m */
 .message_m {
   display: none;
+}
+
+/* 清除浮動 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  /* IE6、7 专有 */
+  *zoom: 1;
 }

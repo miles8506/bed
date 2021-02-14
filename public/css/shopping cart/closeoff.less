@@ -1,0 +1,97 @@
+@import "../common.css";
+.container {
+    margin: 100px 250px;
+    padding: 30px;
+    background-color: rgb(230, 221, 221);
+    overflow: hidden;
+    //bar
+    .shopbar {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        height: 50px;
+        padding: 0 15px 0 ;
+        border: 2px solid gray;
+        border-radius: 25px;
+        span {
+            position: relative;
+            height: 50px;
+            text-align: center;
+            line-height: 46px;
+            .triangle {
+                position: absolute;
+                top: 14px;
+                right: -160%;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-top: 10px solid rgb(230, 221, 221);
+                border-right: 10px solid rgb(230, 221, 221);
+                border-bottom: 10px solid rgb(230, 221, 221);
+                border-left: 10px solid rgb(65, 61, 61);
+            }
+        }
+    }
+    //shopform
+    #shopform {
+       margin-top: 50px;
+       padding: 0 150px;
+       div {
+           height: 50px;
+           line-height: 50px;
+           margin-top: 20px;
+           span {
+               float: left;
+           }
+           input {
+               float: right;
+               width: 190px;
+               height: 25px;
+               margin-top: 12.5px;
+               padding: 2px 5px;
+               border: 1px solid gray;
+               border-radius: 5px;
+           }
+        }
+        .ps {
+            height: 250px;
+            textarea {
+            width: 100%;
+            margin-top: 20px;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 5px;    
+            }
+        }
+        p{
+            text-align: right;
+        }
+        //next
+        .next {
+            float: right;
+            width: 100px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: rgb(109, 104, 104);
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                color: #fff;
+                &:hover {
+                    background-color: rgb(41, 39, 39);
+                }
+            }
+        }
+    }
+}
+
+//正則表達式提示
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}

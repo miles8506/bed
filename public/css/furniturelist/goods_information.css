@@ -1,0 +1,172 @@
+@import "../common.css";
+.container {
+  margin: 100px 150px;
+}
+.container .cartbox .wrap {
+  display: flex;
+  width: 100%;
+}
+.container .cartbox .wrap .cart_page_pic {
+  flex: 1;
+  padding: 20px 20px 0 20px;
+  height: 300px;
+}
+.container .cartbox .wrap .cart_page_pic img {
+  width: 100%;
+  height: 100%;
+}
+.container .cartbox .wrap .goods_content {
+  flex: 1;
+  height: 300px;
+  padding: 20px 0 0 60px;
+}
+.container .cartbox .wrap .goods_content .goods_name {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+.container .cartbox .wrap .goods_content .onsale_price {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.container .cartbox .wrap .goods_content .origin_price {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-decoration: line-through;
+}
+.container .cartbox .wrap .goods_content .quantity-form {
+  margin-bottom: 64px;
+}
+.container .cartbox .wrap .goods_content .quantity-form .itxt {
+  width: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+.container .cartbox .wrap .goods_content .quantity-form .decrement,
+.container .cartbox .wrap .goods_content .quantity-form .increment {
+  color: gray;
+}
+.container .cartbox .wrap .goods_content .goods_infor {
+  display: inline-block;
+  color: gray;
+  margin-bottom: 20px;
+}
+.container .cartbox .wrap .goods_content .join_cart {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: gray;
+}
+.container .cartbox .wrap .goods_content .join_cart a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.container .cartbox .wrap .goods_content .join_cart a:hover {
+  background-color: black;
+}
+.container .cartbox .wrap .goods_content .goods_infor:hover {
+  color: black;
+}
+.container .information_box {
+  margin-top: 50px;
+  padding: 20px;
+}
+.container .information_box .information_hd {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid gray;
+}
+.container .information_box .information_hd li {
+  flex: 1;
+  height: 80px;
+  line-height: 110px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .information_box .information_hd li span {
+  position: relative;
+}
+.container .information_box .information_hd li span .line {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}
+.container .information_box .information_bd {
+  padding: 20px 80px;
+}
+.container .information_box .information_bd #goods {
+  text-align: center;
+}
+.container .information_box .information_bd #goods h4 {
+  position: relative;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.container .information_box .information_bd #goods h4 .line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  transform: translateX(-50%);
+}
+.container .information_box .information_bd #goods .content {
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.container .information_box .information_bd #goods .goods_pic {
+  width: 100%;
+  height: 400px;
+}
+.container .information_box .information_bd #goods .goods_pic img {
+  width: 100%;
+  height: 100%;
+}
+.container .information_box .information_bd #carry h4 {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.container .information_box .information_bd #carry h4 .line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  transform: translateX(-50%);
+}
+.container .information_box .information_bd #carry .carry_way {
+  margin-bottom: 20px;
+}
+.container .information_box .information_bd #carry .carry_way h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+.container .information_box .information_bd #carry .carry_way p {
+  font-size: 18px;
+}
+.container .information_box .information_bd #carry .pay_way h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container .information_box .information_bd #carry .pay_way p {
+  font-size: 18px;
+  line-height: 40px;
+}

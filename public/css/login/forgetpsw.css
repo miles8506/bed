@@ -1,0 +1,37 @@
+@import "../common.css";
+.container {
+  width: 405px;
+  margin: 100px auto 100px;
+  padding: 30px;
+  background-color: #e6dddd;
+}
+.container .email_ipt {
+  display: block;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 100%;
+  padding: 2px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.container .next {
+  float: right;
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #b37474;
+}
+.container .next:hover {
+  opacity: 0.7;
+}
+.container .next a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}

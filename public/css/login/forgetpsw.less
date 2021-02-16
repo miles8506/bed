@@ -1,0 +1,38 @@
+@import "../common.css";
+.container {
+    // height: 130px;
+    width: 405px;
+    margin: 100px auto 100px;
+    padding: 30px;
+    background-color: #e6dddd;
+    .email_ipt {
+        display: block;
+        margin-bottom: 10px;
+        height: 25px;
+        width: 100%;
+        padding: 2px 5px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .next {
+        float: right;
+        width: 20%;
+        height: 30px;
+        border-radius: 5px;
+        background-color: rgb(179, 116, 116);
+        &:hover {
+            opacity: .7;
+        }
+        a {
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+        }
+    }
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}

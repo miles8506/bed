@@ -7,17 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../public/css/base.css">
-    <link rel="stylesheet" href="../../public/css/shopping cart/pay_success.css">
-    <link rel="stylesheet" href="../../public/css/shopping cart/pay_success992.css"
-        media="screen and (max-width: 992px)">
-    <!-- <link rel="stylesheet" href="../../public/css/index/index.css"> -->
+    <link rel="stylesheet" href="../../public/css/login/login.css">
+    <link rel="stylesheet" href="../../public/css/login/login767.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="../../public/css/index/mobleindex.css" media="screen and (max-width: 767px)">
+
 </head>
 
 <body>
     <!-- nav_list start -->
     <section class="nav_items">
-        <li><a href="../../index.html">首頁</a></li>
+        <li><a href="javascript:;">首頁</a></li>
         <li class="style_toggle"><a href="javascript:;">風格介紹<span class="style_up"></span>
                 <ul class="nav_style">
                     <li><a href="../styleclass/classic.html">經典簡約風格</a></li>
@@ -25,9 +24,9 @@
                     <li><a href="../styleclass/clean.html">純淨柔和風格</a></li>
                 </ul>
             </a></li>
-        <li><a href="./cart.html">購物車</a></li>
+        <li><a href="../shopping cart/cart.html">購物車</a></li>
         <li><a href="../about/about.html">關於我們</a></li>
-        <li><a href="../login/login.html">登入</a></li>
+        <li><a href="./login.html">登入</a></li>
     </section>
     <!-- nav_list end -->
     <!-- navbar start -->
@@ -37,7 +36,7 @@
         </h1>
         <div class="nav">
             <ul>
-                <li><a href="./index.html">首頁<span></span></a></li>
+                <li><a href="../../index.html">首頁<span></span></a></li>
                 <li class="stylebtn"><a href="javascript:;">風格介紹<span></span></a>
                     <div class="style_items">
                         <a href="../styleclass/classic.html">經典簡約風格</a>
@@ -47,8 +46,8 @@
                 </li>
 
                 <li><a href="../about/about.html">關於我們<span></span></a></li>
-                <li><a href="./cart.html">購物車<span></span></a></li>
-                <li><a href="../login/login.html">登入<span></span></a></li>
+                <li><a href="../shopping cart/cart.html">購物車<span></span></a></li>
+                <li><a href="./login.html">登入<span></span></a></li>
             </ul>
         </div>
         <div class="navicon"></div>
@@ -56,9 +55,34 @@
     <!-- navbar end -->
     <!-- container start -->
     <section class="container">
-        <div class="inform">
-            <p class="content">您已成功付款，貨單編號為<span style="color: red;">123456789</span>，若有其他問題請洽0911-321-111。</p>
-            <button class="home"><a href="../../index.html">回首頁</a></button>
+        <div class="login_hd">
+            <div>
+                <h4>登入<span class="line"></span></h4></span>
+            </div>
+            <div>
+                <h4>註冊<span></span></h4></span>
+            </div>
+        </div>
+        <div class="login_bd">
+            <div class="login_wrap" id="wrap">
+                <form action="" id="login_form">
+                    <div class="account"><input type="text" placeholder="請輸入帳號"></div>
+                    <div class="psw"><input type="password" placeholder="請輸入密碼"></div>
+                    <button class="login_btn"><a href="../../index.html">登入</a></button>
+                </form>
+                <div class="fblogin"><a href="javascript:;">使用Facebook登入</a></div>
+                <div class="forget_psw"><a href="./forgetpsw.html">忘記密碼</a></div>
+            </div>
+            <div class="register_wrap" id="wrap">
+                <form action="" id="register_form">
+                    <div class="account"><input type="text" placeholder="請輸入帳號"></div>
+                    <div class="psw"><input type="password" placeholder="請輸入密碼"></div>
+                    <div class="checked_psw"><input type="password" placeholder="請再次輸入密碼"></div>
+                    <div class="cel"><input type="tel" placeholder="請請輸入手機號碼"></div>
+                    <div class="email"><input type="email" placeholder="請請輸入e-mail"></div>
+                    <button class="login_btn"><a href="../../index.html">註冊</a></button>
+                </form>
+            </div>
         </div>
     </section>
     <!-- container end -->
@@ -76,12 +100,11 @@
         </div>
     </footer>
     <!-- footer end -->
-    <!-- topicon start -->
-    <div class="topicon" style="bottom: 50px">
-        
-    </div>
-    <!-- topicon end-->
-
+    <script src="../../public/jquery/jquery.min.js"></script>
+    <script src="../../public/js/navicon(m).js"></script>
+    <script src="../../public/js/style_item.js"></script>
+    <script src="../../public/js/style_m.js"></script>
+    <script src="../../public/js/login.js"></script>
 </body>
 
 </html>

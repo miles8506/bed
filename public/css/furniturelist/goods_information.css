@@ -1,6 +1,6 @@
 @import "../common.css";
 .container {
-  margin: 100px 150px;
+  margin: 100px 150px 50px;
 }
 .container .cartbox .wrap {
   display: flex;
@@ -135,6 +135,9 @@
   width: 100%;
   height: 100%;
 }
+.container .information_box .information_bd #carry {
+  display: none;
+}
 .container .information_box .information_bd #carry h4 {
   position: relative;
   width: 170px;
@@ -152,7 +155,7 @@
   transform: translateX(-50%);
 }
 .container .information_box .information_bd #carry .carry_way {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .container .information_box .information_bd #carry .carry_way h6 {
   font-size: 20px;

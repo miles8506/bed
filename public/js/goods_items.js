@@ -5,18 +5,17 @@ $('.buy').on('click', function () {
     $('.cart_page').show();
     cart_page.innerHTML = `
     <div class="wrap">
-        <div class="cart_page_pic"><img src="../../public/upload/ad31.jpg" alt=""></div>
+        <div class="cart_page_pic"><img src="../../public/upload/ad33.jpg" alt=""></div>
         <div class="goods_content">
-            <div class="goods_name">傢俱組</div>
-            <div class="onsale_price">特價NT$<span id="price">3000</span>/<span id="set">1</span>組</div>
+            <div class="goods_name">床具組</div>
+            <div class="onsale_price">NT$<span id="price">3000</span>/<span id="set">1</span>組</div>
             <div class="hide hide_price">3000</div>
-            <div class="origin_price">原價<span>NT$5000/1組</span></div>
             <div class="quantity-form">
                 <a href="javascript:;" class="decrement">-</a>
                 <input type="text" class="itxt" value="1" disabled>
                 <a href="javascript:;" class="increment">+</a>
             </div>
-            <a href="./furniture_information.html" target="blank" class="goods_infor">商品資訊</a>
+            <a href="./goods_information.html" target="blank" class="goods_infor">商品資訊</a>
             <div class="join_cart"><a href="../shopping cart/cart.html">加入購物車</a></div>
         </div>
     </div>`;

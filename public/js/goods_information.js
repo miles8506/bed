@@ -35,3 +35,14 @@ const amount = function (num, price) {
     $('#set').html(num);
     $('#price').html(tol);
 };
+
+
+//tab欄切換
+let index = null;
+$('.information_hd li').eq(0).find('em').addClass('line');
+$('.information_hd li').on('click', function () {
+    index = $(this).index();
+    $('.information_hd').find('em').removeClass('line');
+    $(this).find('em').addClass('line');
+    $('.information_bd .bd_box').css('display', 'none').eq(index).css('display', 'block');
+});

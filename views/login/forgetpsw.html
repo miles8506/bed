@@ -3,21 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="../../public/css/base.css">
-    <link rel="stylesheet" href="../../public/css/shopping cart/pay_success.css">
-    <link rel="stylesheet" href="../../public/css/shopping cart/pay_success992.css"
-        media="screen and (max-width: 992px)">
-    <!-- <link rel="stylesheet" href="../../public/css/index/index.css"> -->
+    <link rel="stylesheet" href="../../public/css/login/forgetpsw.css">
+    <link rel="stylesheet" href="../../public/css/login/forgetpsw767.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="../../public/css/index/mobleindex.css" media="screen and (max-width: 767px)">
 </head>
 
 <body>
     <!-- nav_list start -->
     <section class="nav_items">
-        <li><a href="../../index.html">首頁</a></li>
+        <li><a href="javascript:;">首頁</a></li>
         <li class="style_toggle"><a href="javascript:;">風格介紹<span class="style_up"></span>
                 <ul class="nav_style">
                     <li><a href="../styleclass/classic.html">經典簡約風格</a></li>
@@ -25,8 +22,8 @@
                     <li><a href="../styleclass/clean.html">純淨柔和風格</a></li>
                 </ul>
             </a></li>
-        <li><a href="./cart.html">購物車</a></li>
-        <li><a href="../about/about.html">關於我們</a></li>
+        <li><a href="../shopping cart/cart.html">購物車</a></li>
+        <li><a href="./about.html">關於我們</a></li>
         <li><a href="../login/login.html">登入</a></li>
     </section>
     <!-- nav_list end -->
@@ -46,20 +43,21 @@
                     </div>
                 </li>
 
-                <li><a href="../about/about.html">關於我們<span></span></a></li>
-                <li><a href="./cart.html">購物車<span></span></a></li>
+                <li><a href="./about.html">關於我們<span></span></a></li>
+                <li><a href="../shopping cart/cart.html">購物車<span></span></a></li>
                 <li><a href="../login/login.html">登入<span></span></a></li>
             </ul>
         </div>
         <div class="navicon"></div>
     </section>
     <!-- navbar end -->
-    <!-- container start -->
+    <!-- container star -->
     <section class="container">
-        <div class="inform">
-            <p class="content">您已成功付款，貨單編號為<span style="color: red;">123456789</span>，若有其他問題請洽0911-321-111。</p>
-            <button class="home"><a href="../../index.html">回首頁</a></button>
-        </div>
+        <form action="" class="clearfix">
+            <div> <input type="email" placeholder="請輸入您的e-mail帳號" class="email_ipt"></div>
+            <p class="alert_bar"></p>
+            <button class="next"><a href="./checkcode.html">下一步</a></button>
+        </form>
     </section>
     <!-- container end -->
     <!-- footer start-->
@@ -76,12 +74,11 @@
         </div>
     </footer>
     <!-- footer end -->
-    <!-- topicon start -->
-    <div class="topicon" style="bottom: 50px">
-        
-    </div>
-    <!-- topicon end-->
-
+    <script src="../../public/jquery/jquery.min.js"></script>
+    <script src="../../public/js/navicon(m).js"></script>
+    <script src="../../public/js/style_item.js"></script>
+    <script src="../../public/js/style_m.js"></script>
+    <script src="../../public/js/forgetpsw.js"></script>
 </body>
 
 </html>

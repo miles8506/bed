@@ -8,10 +8,15 @@
     position: relative;
     width: 100%;
     height: 700px;
-    padding: 0 50px;
-    background: url(../../images/700.jpg) no-repeat;
+    /* padding: 0 50px; */
+    /* background: url(../../upload/ad43.jpg) no-repeat; */
     opacity: .7;
     overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .content {
@@ -22,16 +27,18 @@
 }
 
 .content h4 {
-    font-size: 36px;
+    padding: 0 20px;
+    font-size: 50px;
+    color: #000000;
 }
 
 .content p {
     margin: 15px 0 70px 0;
-    padding-right: 16px;
-    font-size: 20px;
+    padding: 0 20px;
+    font-size: 30px;
     text-justify: distribute;
     text-align:justify;
-    color: gray;
+    color: #000000;
 }
 
 .content .icon_wrap div {
@@ -64,7 +71,8 @@
     display: block;
     height: 100%;
     font-size: 20px;
-    color: #fff;
+    color: #000000;
+    font-weight: 700;
     z-index: 1;
 }
 
@@ -107,15 +115,11 @@
     width: 40%;
     height: 300px;
 }
-.contain-row1 .pic {
-    background: url(../../upload/containrow1.jpg) no-repeat center center;
-    background-size: cover;
+.contain-row1 .pic img,
+.contain-row2 .pic img {
+    width: 100%;
+    height: 100%;
 }
-.contain-row2 .pic {
-    background: url(../../upload/content2.jpg) no-repeat center center;
-    background-size: cover;
-}
-
 .contain-row1 .row1-content,
 .contain-row2 .row2-content {
     width: 60%;
@@ -187,15 +191,15 @@
 }
 /* bedstyle */
 .bedstyle .bedstyle-1 .bedstyle-1-bd a{
-    background: url(../../upload/style_1.jpg)no-repeat center center;
+    background: url(../../upload/ad39.jpg)no-repeat center center;
     background-size: cover;
 }
 .bedstyle .bedstyle-2 .bedstyle-2-bd a{
-    background: url(../../upload/style2.jpg)no-repeat center center;
+    background: url(../../upload/ad40.png)no-repeat center center;
     background-size: cover;
 }
 .bedstyle .bedstyle-3 .bedstyle-3-bd a{
-    background: url(../../upload/style3.jpg)no-repeat center center;
+    background: url(../../upload/ad41.jpg)no-repeat center center;
     background-size: cover;
 }
 /* share */

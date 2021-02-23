@@ -30,9 +30,9 @@ a {
 
 /* navbar */
 .logo {
-  width: 100px;
+  width: 185px;
   height: 100%;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 70px;
 }
 .logo a {
@@ -86,8 +86,9 @@ a {
   display: inline-block;
   height: 50px;
   width: 100%;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 50px;
+  font-weight: 700;
 }
 .nav .style_items a:hover {
   color: rgba(26, 23, 23, 0.3);

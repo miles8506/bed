@@ -1,5 +1,7 @@
 @import "../common.css";
-
+body {
+    background-color: rgba(244, 239, 237, 0.73);  
+}
 .nav_items {
     display: none;
 }
@@ -47,7 +49,7 @@
     border-radius: 30px;
     text-align: center;
     line-height: 60px;
-    background-color: brown;
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -97,7 +99,7 @@
 /* container */
 .container {
     width: 84%;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 .container .contain-row1,
 .container .contain-row2 {

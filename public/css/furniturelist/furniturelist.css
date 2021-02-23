@@ -112,7 +112,7 @@
   flex-wrap: wrap;
 }
 .container .goods_wrap ul li {
-  border: 2px solid #fff;
+  border: 2px solid rgba(244, 239, 237, 0);
   flex: 32%;
   height: 400px;
   margin-right: 15px;

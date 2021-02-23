@@ -5,7 +5,7 @@ $('.buy').on('click', function () {
     $('.cart_page').show();
     cart_page.innerHTML = `
     <div class="wrap">
-        <div class="cart_page_pic"><img src="../../public/upload/ad31.jpg" alt=""></div>
+        <div class="cart_page_pic"><img src="../../public/upload/ad41.jpg" alt=""></div>
         <div class="goods_content">
             <div class="goods_name">傢俱組</div>
             <div class="onsale_price">特價NT$<span id="price">3000</span>/<span id="set">1</span>組</div>

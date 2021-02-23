@@ -1,6 +1,6 @@
 @import "../common.css";
 body {
-    background-color: rgba(244, 239, 237, 0.73);  
+    background-color: rgba(244, 239, 237, .73);  
 }
 .nav_items {
     display: none;
@@ -84,7 +84,7 @@ body {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: rgba(244, 239, 237, 0.73);
+    background-color: rgba(239, 224, 205, .34);
     z-index: -1;
     transition: all .5s;
 }
@@ -107,7 +107,7 @@ body {
     padding: 2% 30px;
     margin-top: 40px;
     background-color: white;
-    box-shadow: 9px 8px 10px -7px rgba(0,0,0, 0.3);
+    box-shadow: 9px 8px 10px -7px rgba(0,0,0, .3);
 }
 .contain-row1 .pic ,
 .contain-row2 .pic{

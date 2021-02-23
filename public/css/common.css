@@ -10,7 +10,7 @@ body {
   max-width: 1440px;
   min-width: 360px;
   margin: 0 auto;
-  background-color: rgba(235, 233, 233, .1);
+  background-color: rgba(244, 239, 237, .73) !important;  
 }
 /* 點擊高亮後會有多餘的效果 需要變為透明 */
 * {
@@ -185,7 +185,8 @@ a {
   height: 200px;
   margin-top: 40px;
   padding: 3% 10% 0 10%;
-  background-color: #999;
+  /* background-color: #999; */
+  background-color: rgba(236, 200, 217, 0.15);
   text-align: center;
   color: #fff;
 } 
@@ -203,7 +204,8 @@ a {
 .footer .row li {
   float: left;
   width: 100px;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: rgba(239, 224, 205, 0.34);
   margin-right: 25px;
   height: 40px;
   line-height: 40px;

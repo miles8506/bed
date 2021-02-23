@@ -1,7 +1,4 @@
 @import "../common.css";
-body {
-    background-color: rgba(244, 239, 237, .73);  
-}
 .nav_items {
     display: none;
 }

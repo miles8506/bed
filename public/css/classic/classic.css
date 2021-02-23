@@ -3,7 +3,6 @@
   max-width: 1440px;
   min-width: 360px;
   padding: 100px 200px 0;
-  background-color: #fff;
 }
 .container .title {
   margin-bottom: 15px;
@@ -21,7 +20,7 @@
   font-size: 18px;
   text-justify: distribute;
   text-align: justify;
-  background-color: #f3efef;
+  background-color: #fff;
 }
 .container .stylepic {
   flex: 40%;

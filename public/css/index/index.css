@@ -84,7 +84,7 @@ body {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: red;
+    background-color: rgba(244, 239, 237, 0.73);
     z-index: -1;
     transition: all .5s;
 }
@@ -93,9 +93,6 @@ body {
     width: 100%;
 }
 
-.content div a:hover {
-    color: #fff;
-}
 /* container */
 .container {
     width: 84%;

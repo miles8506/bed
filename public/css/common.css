@@ -186,7 +186,7 @@ a {
   margin-top: 40px;
   padding: 3% 10% 0 10%;
   /* background-color: #999; */
-  background-color: rgba(236, 200, 217, 0.15);
+  background-color: rgba(52, 31, 47, 0.12);
   text-align: center;
   color: #fff;
 } 
@@ -205,12 +205,12 @@ a {
   float: left;
   width: 100px;
   /* background-color: #333; */
-  background-color: rgba(239, 224, 205, 0.34);
+  background-color: #fff;
   margin-right: 25px;
   height: 40px;
   line-height: 40px;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 1px solid gray;
   overflow: hidden;
 }
 .footer .row li:nth-child(3) {
@@ -219,13 +219,14 @@ a {
 .footer .row li a {
   display: block;
   width: 100%;
-  color: #fff;
+  color: gray;
 }
 .footer .row li a:hover {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(244, 239, 237, .73);
 }
 .footer .copyright {
   margin-top: 35px;
+  color: gray;
 }
 
 /* topicon */

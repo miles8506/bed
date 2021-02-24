@@ -1,0 +1,8 @@
+/* container flex調整 */
+.container .goods_wrap ul li {
+  flex: 33%;
+  margin-right: 15px !important;
+}
+.container .goods_wrap ul li:nth-child(2n) {
+  margin-right: 0;
+}

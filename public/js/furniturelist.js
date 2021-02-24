@@ -16,7 +16,7 @@ $('.buy').on('click', function () {
                 <input type="text" class="itxt" value="1" disabled>
                 <a href="javascript:;" class="increment">+</a>
             </div>
-            <a href="./furniture_information.html" target="blank" class="goods_infor">商品資訊</a>
+            <a href="./furniture_information.html" target="blank" class="goods_infor">商品資訊 (點擊我)</a>
             <div class="join_cart"><a href="../shopping cart/cart.html">加入購物車</a></div>
         </div>
     </div>`;

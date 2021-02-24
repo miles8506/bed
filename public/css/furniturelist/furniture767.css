@@ -5,8 +5,11 @@
 .container .goods_wrap ul {
     display: block;
 }
+.container .goods_wrap ul li {
+    margin-right: 0;
+}
 .container .goods_wrap ul li:hover {
-    border: 2px solid #fff;
+    border: 2px solid rgba(244, 239, 237,-.5);
 }
 .container .goods_wrap ul li .buy:hover {
     background-color: gray;

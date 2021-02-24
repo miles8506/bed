@@ -180,9 +180,11 @@
 }
 .bg {
   position: fixed;
-  width: 2000px;
-  height: 8000px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 999;
-  background-color: black;
+  background-color: gray;
   opacity: 0.5;
 }
